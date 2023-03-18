@@ -2,6 +2,7 @@
 #include <random>
 #include <iostream>
 #include <string.h>
+#include <math.h>
 #ifdef _WIN32
 #include <Windows.h>
 #else
@@ -11,16 +12,6 @@
 Die::Die()
 {
 	srand(time(NULL));
-}
-
-void Die::display()
-{
-	for (int count = 0; count < 100; count++)
-	{
-		printAscii(rand() % 5 + 1);
-		resetDisplay();
-		Sleep(count);
-	}
 }
 
 void Die::resetDisplay()
@@ -58,6 +49,16 @@ void Die::printAscii(int val)
 		break;
 	}
 	std::cout << ascii << faceAscii << topBotAscii;
+}
+
+void Die::display()
+{
+	for (int count = 0; count < 100; count++)
+	{
+		printAscii(rand() % 5 + 1);
+		resetDisplay();
+		Sleep(pow(count / 7, 2));
+	}
 }
 
 void Die::roll()

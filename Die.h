@@ -3,9 +3,9 @@ class Die
 {
 public:
 	Die();
-	void display();
 	void resetDisplay();
 	void printAscii(int asciiVal);
+	void display();
 	void roll();
 };
 

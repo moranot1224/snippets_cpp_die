@@ -24,6 +24,7 @@
     <ProjectGuid>{55c56ce7-203d-4178-a86e-7807d47fd9fb}</ProjectGuid>
     <RootNamespace>dieroll</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Die</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
